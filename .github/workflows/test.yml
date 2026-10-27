@@ -1,0 +1,17 @@
+name: Test Project
+
+on:
+	push: [main]
+	# pull_request:
+	# workflow_dispatch: 
+
+jobs:
+	test:
+		runs-on: ubuntu-latest
+		steps:
+			- name: Check out repository
+				uses: actions/checkout@v4
+			- name: Install dependencies
+				run: npm install
+			- name: Run tests
+				run: npm test --if-present
