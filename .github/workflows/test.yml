@@ -1,8 +1,8 @@
 name: Test Project
-
-on: push
-	# pull_request:
-	# workflow_dispatch: 
+on: 
+  push:
+    branches:
+      - main
 
 jobs:
 	test:
