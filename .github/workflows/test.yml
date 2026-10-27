@@ -1,7 +1,6 @@
 name: Test Project
 
-on:
-	push: [main]
+on: push
 	# pull_request:
 	# workflow_dispatch: 
 
