@@ -6,7 +6,7 @@ on:
 
 jobs:
 # test:
-#   name: Build, test and secret scan
+  name: Build, test and secret scan
   runs-on: ubuntu-latest 
   steps:
     - name: Check out repository
